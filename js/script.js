@@ -1,3 +1,4 @@
+//Array of quote objects the app will pull from
 var quotes = [
   {
    Quote: 'If you tell the truth, you don\'t have to remember anything.',
@@ -73,19 +74,27 @@ var quotes = [
 ]
 
 
+function getRandomQuote() {
+  //Create a random integer from 0 and the total number of quotes (currently 10) - 1 .
+  var randomInt = Math.floor(Math.random() * quotes.length);
+  console.log(randomInt);
+
+  //Use the random iniger to select a quote from the array
+  for (i=0; i <= quotes.length;  i += 1) {
+    if (i === randomInt) {
+      return quotes[i]
+    } 
+  }
+}
+
+var test = getRandomQuote();
+
+console.log(test);
 
 
+
+function printQuote() {
 /***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
-
-
-
-
-/***
-  Create the `printQuote` function to: 
    - Call the `getRandomQuote` function and assign it to a variable.
    - Create a variable for the HTML string and set it equal to an empty string.
    - Use the HTML template in the instructions or the markup in the index.html file, AND 
@@ -96,18 +105,9 @@ var quotes = [
    - Don't forget to close that final `p` tag.
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
+}
 
 
 
-
-/***
-  When the "Show another quote" button is clicked, the event listener 
-  below will be triggered, and it will call, or "invoke", the `printQuote` 
-  function. So do not make any changes to the line of code below this 
-  comment.
-***/
-
+// When the "Show another quote" button is clicked, call the `printQuote` function.
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
