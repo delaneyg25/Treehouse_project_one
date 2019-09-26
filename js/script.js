@@ -87,26 +87,28 @@ function getRandomQuote() {
   }
 }
 
-var test = getRandomQuote();
-
-console.log(test);
-
-
 
 function printQuote() {
-/***
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote vairable to build your HTML string.
-   - Add the quote and source section to the HTML string.
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
-***/
-}
 
+  var theQuote = getRandomQuote();
+  var quoteBox = '';
+
+  quoteBox += '<p class="quote">' + theQuote.Quote + '</p>';
+  quoteBox += '<p class="source">' + theQuote.Author;
+  
+  if (theQuote.Citation !== null) {
+    quoteBox += '<span class="citation">' + theQuote.Citation + '</span>';
+  }
+
+  if (theQuote.Year !== null) {    
+    quoteBox += '<span class="year">' + theQuote.Year + '</span>';
+  }
+
+  quoteBox += '</p>';
+  
+  var printDiv = document.getElementById("quote-box")
+  printDiv.innerHTML = quoteBox;
+}
 
 
 // When the "Show another quote" button is clicked, call the `printQuote` function.
