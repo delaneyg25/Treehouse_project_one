@@ -1,19 +1,76 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
-
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
-
-/*** 
-  Create the array of quote objects and name it `quotes`.
-  Add at least five quote objects to the `quotes` array.
-  Give each quote object a `quote` and `source` property.
-  Add the `citation` property to at least one object in the array.
-  Add the `year` property to at least one object in the array.
-  Use console.log() to log your array of quotes to the console.
-***/
+var quotes = [
+  {
+   Quote: 'If you tell the truth, you don\'t have to remember anything.',
+   Author: 'Mark Twain',
+   Citation: 'Notebook entry, January or February 1894, Mark Twain\'s Notebook, ed. Albert Bigelow Paine',
+   Year: '1935',
+   Tags: ['Wisdom'],
+  },
+  {
+   Quote: 'Life is like riding a bicycle. To keep your balance you must keep moving.',
+   Author: 'Albert Einstein',
+   Citation: 'Letter to his son Eduard',
+   Year: '1930',
+   Tags: ['Wisdom'],
+   
+  },
+  {
+   Quote: 'Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.',
+   Author: 'Nikola Tesla',
+   Citation: '"The Problem of Increasing Human Energy", Century Illustrated Magazine',
+   Year: '1930',
+   Tags: ['Wisdom'],
+  },
+  {
+   Quote: 'I haven\'t a particle of confidence in a man who has no redeeming petty vices whatsoever.',
+   Author: 'Mark Twain',
+   Citation: '"Answers to Correspondents", The Californian, 17 June 1865. Anthologized in The Celebrated Jumping Frog of Calaveras County, and Other Sketches',
+   Year: '1867',
+   Tags: ['Humor', 'Wisdom'],
+  },
+  {
+   Quote: 'All of science is nothing more than the refinement of everyday thinking.',
+   Author: 'Albert Einstein',
+   Citation: '"Physics and Reality" in the Journal of the Franklin Institute Vol. 221, Issue 3',
+   Year: '1936',
+   Tags: ['Science'],
+  },
+  {
+   Quote: 'Let the future tell the truth and evaluate each one according to his work and accomplishments. The present is theirs; the future, for which I really worked, is mine.',
+   Author: 'Nikola Tesla',
+   Citation: '"A Visit to Nikola Tesla" by Dragislav L. Petković in Politika',
+   Year: '1927',
+   Tags: ['Wisdom', 'Politics'],
+  },
+  {
+   Quote: 'All you need in this life is ignorance and confidence, and then Success is sure.',
+   Author: 'Mark Twain',
+   Citation: 'Mark Twain\'s Notebook',
+   Year: '1887',
+   Tags: ['Humor', 'Wisdom'],
+  },
+  {
+   Quote: 'Never do anything against conscience even if the state demands it.',
+   Author: 'Albert Einstein',
+   Citation: 'as quoted by Virgil Henshaw in Albert Einstein: Philosopher Scientist',
+   Year: '1949',
+   Tags: ['Wisdom', 'Politics'],
+  },
+  {
+   Quote: 'Something dreadful happens to students between first and twelfth grades, and it\'s not just puberty.',
+   Author: 'Carl Sagan',
+   Citation: 'Science Is a Way of Thinking',
+   Year: '1996',
+   Tags: ['Politics', 'Humor'],
+  },
+  {
+   Quote: 'That kind of skeptical, questioning, \"dont accept what authority tells you\" attitude of science — is also nearly identical to the attitude of mind necessary for a functioning democracy. Science and democracy have very consonant values and approaches, and I don\'t think you can have one without the other.',
+   Author: 'Carl Sagan',
+   Citation: 'Talk of the Nation',
+   Year: '1996',
+   Tags: ['Science', 'Poitics'],
+  },
+]
 
 
 
