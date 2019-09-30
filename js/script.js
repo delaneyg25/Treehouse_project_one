@@ -13,7 +13,6 @@ var quotes = [
    Citation: 'Letter to his son Eduard',
    Year: '1930',
    Tags: ['Wisdom'],
-   
   },
   {
    Quote: 'Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.',
@@ -73,6 +72,8 @@ var quotes = [
   },
 ]
 
+var newColor = '';
+
 
 function getRandomQuote() {
   //Create a random integer from 0 and the total number of quotes (currently 10) - 1 .
@@ -87,6 +88,17 @@ function getRandomQuote() {
   }
 }
 
+function colorMath() {
+  return Math.floor(Math.random() * 256 );
+ }
+ 
+ function randomColor() {
+  var theColor =  'rgb(';
+  theColor += colorMath() + ',';
+  theColor += colorMath() + ',';
+  theColor += colorMath() + ')';
+  return theColor;
+ }
 
 function printQuote() {
 
@@ -108,6 +120,9 @@ function printQuote() {
   
   var printDiv = document.getElementById("quote-box")
   printDiv.innerHTML = quoteBox;
+
+  document.body.style.backgroundColor = randomColor()
+  document.body.style.color = randomColor()
 }
 
 
