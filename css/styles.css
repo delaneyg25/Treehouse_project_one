@@ -71,6 +71,22 @@ body {
   font-style: normal;
 }
 
+.tags {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+
+.tags:before {
+  content: "  [";
+}
+
+.tags::after {
+  content: "[";
+}
+
 #loadQuote {
   position: fixed;
   width: 12em;
